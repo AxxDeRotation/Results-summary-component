@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    /*---PRIMARY---*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --grean-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /*---GRADIENTS---*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: rgb(46, 43, 233);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*---NEUTRAL---*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Hanken Grotesk";
+    background-color: var(--white);
+}
+
+.component {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75vh;
+    height: 50%;
+    border-radius: 25px;
+    box-shadow: 15px 15px 100px 0px #cccccc;
+}
+
+.subsection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subsection:nth-child(1) {
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 25px;
+}
+
+h1, h2, h3, h4, h5, p, .circle, button {
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 40px;
+    padding: 0px;
+}
+
+h4 {
+    font-size: 24px;
+    color: var(--light-lavender);
+}
+
+.circle {
+    background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    border-radius: 100%;
+    width: 18.75vh;
+    height: 18.75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 52px;
+}
